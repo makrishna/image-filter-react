@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install`
+
+Installs the package which are available in package.json.
+
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -38,6 +42,18 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Features
+
+Filtering items based on categories.
+
+Global search enables to filter across all categories
+
+Opacity feature sets the opacity of visible images
+
+<img src='./scr1.png'/>
+
+<img src='./scr2.png'/>
 
 ## Learn More
 
