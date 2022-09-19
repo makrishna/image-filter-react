@@ -1,0 +1,43 @@
+.leftside-panel {
+    width: 358px;
+    border: 1px solid #ededed;
+    padding: 8px;
+    height: 100%;
+    height: calc(100vh - 140px);
+    margin:8px;
+    background-color: #fff;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0!important;
+    margin: 0;
+    .menu-item {
+        list-style: none;
+        background-color: aliceblue;
+        cursor: pointer;
+        border-bottom: 1px solid #ccc;
+        a {
+            text-decoration: none;
+            color: #010;
+            display: flex;
+            padding: 8px;
+        }
+    }
+    .active {
+        background-color: #1171a3;  
+        color: #f1f1f1!important;
+        display: flex!important;
+        border-radius: 6px;
+    }
+}
+
+.range {
+    width: 100px;
+  }
+
+.range-slider {
+    position: absolute;
+    left: 10px;
+    bottom: 60px;
+}
