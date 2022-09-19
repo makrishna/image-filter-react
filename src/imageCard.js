@@ -11,13 +11,16 @@ export class ImageCard extends React.Component {
 
     render() {
         eventBus.on("rangeValueChange", (data) => {
-            if(document.getElementById(this.props.image) != null) {
-                document.getElementById(this.props.image).style.opacity = (parseFloat(data.range))/10
+            if (document.getElementById(this.props.image) != null) {
+                document.getElementById(this.props.image).style.opacity = (parseFloat(data.range)) / 10
             }
         })
         return (
             <div className='image-card'>
-                <img id={this.props.image} src={this.props.image}/>
+                <img id={this.props.image}
+                    ref={img => this.img = img} onError={
+                        () => this.img.src = 'assets/err_image.png'}
+                    src={this.props.image} />
                 <h3>{this.props.text}</h3>
             </div>
         )

@@ -5,20 +5,25 @@ import './leftside-panel.scss';
 import data from "./../assets/data/data.json"
 
 function LeftsidePanel() {
-    let menuItems = [{ name: "Butterfly", active: true, path: "/butterfly", data: data.Butterfly }, { name: "Cars", active: false, path: "/cars", data: data.Cars }, { name: "Cell Phones", active: false, path: "/cellphones", data: data.Cellphone }, { name: "Office", active: false, path: "/office", data: data.Office }]
-    let value = 10;
+    let menuItems = [
+        { name: "Butterfly", active: true, path: "/butterfly", data: data.Butterfly },
+        { name: "Cars", active: false, path: "/cars", data: data.Cars },
+        { name: "Cell Phones", active: false, path: "/cellphones", data: data.Cellphone },
+        { name: "Office", active: false, path: "/office", data: data.Office }]
 
-    const [ range, setRange ] = useState(10);
+    const [range, setRange] = useState(10);
 
     let rangeValueChange = (event) => {
         setRange(event.target.value);
-        eventBus.dispatch("rangeValueChange",{range:range})
+        eventBus.dispatch("rangeValueChange", { range: range })
         console.log(range);
     }
 
     return (
         <div className='leftside-panel'>
             <ul className='menu-items'>
+                <li className='menu-item'>
+                </li>
                 {
                     menuItems.map((element, index) => {
                         return (

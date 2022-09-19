@@ -7,10 +7,10 @@ function Cellphones() {
     const location = useLocation();
     let [data,setData] = useState(location.state.data)
 
-    let searchEvent = (event) => {
-        setData(location.state.data.filter(em => em.text.toLowerCase().includes(event.target.value.toLowerCase())))
-    }
-    eventBus.on("searched", () => searchEvent(event));
+    // let searchEvent = (event) => {
+    //     setData(location.state.data.filter(em => em.text.toLowerCase().includes(event.target.value.toLowerCase())))
+    // }
+    // eventBus.on("searched", () => searchEvent(event));
 
     return (
         <div>
